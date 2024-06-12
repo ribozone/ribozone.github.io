@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
   <title>Sharing your art online</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
 </head>
@@ -11,7 +11,6 @@
 		<h1>Sharing your art online</h1>
 			<p class="subtitle">How to make a free & handmade portfolio site</p>
 			<p class="date">11AM - 1PM on June 30th at Volume Two</p>
-			<p style="text-align: center; margin: 1rem;">An arts meetup workshop by Loren, a website enthusiast (homepage: <a href="https://ribo.zone">ribo.zone</a>)</p>
 		<h2>What to bring</h2>
 			<ul>
 				<li>A laptop with a text editor</li>
@@ -24,6 +23,7 @@
 					</ul>
 			</ul>
 		<h2 id="workshop">Workshop agenda (subject to change)</h2>
+			<div class="flex">
 				<ul>
 					<li><b>Intro (me, you, websites)</b> ~ 10 min</li>
 					<li><b>Getting started with code</b> ~ 10 min</li>
@@ -34,21 +34,30 @@
 					<li><b>Putting your site online</b> ~ 10 min</li>
 					<li><b>Learning more</b> ~ after the workshop</li>
 				</ul>
-		<img style="display: block; margin: 3.5rem auto;" src="https://ribo.zone/sticky/notes/pikmintrio.png" alt="">
+				<img src="../assets/computa.png" alt="drawing of the workshop host at a computer and giving you a thumbs up!">
+			</div>
 		<p class="date">Everything below this is a work in progress!</p>
 		<h2>Introduction</h2>
-			<h3>What websites inspire you?</h3>
+			<p>Hi. I have no qualifications, but I do have a <a href="https://ribo.zone">homepage</a> (where I sometimes share my art) and a lot of enthusiasm for website-making. Maybe you're attending this workshop offline and I'm speaking directly to you, or maybe you're reading this on your own. Either way, what I'm here to tell you is that you can make your own website without paying Squarespace $20/month.</p>
 			<h3>Why make a website by hand?</h3>
-				<h4>You aren't paying for files you don't own</h4>
-					<p>Squarespace, Wix, Cargo, etc are all <span style="text-transform:uppercase;">too expensive</span>.</p>
-				<h4>You have total creative freedom</h4>
-				<h4>You learn something new (and fun?!)</h4>
+				<h4>Save money by not paying for stuff you don't own</h4>
+					<p>Squarespace, Wix, Cargo, etc are all <strong style="text-transform:uppercase;">too expensive</strong> and you don't even own your site! They "own" their templates, so they prevent you from exporting your site and taking the files somewhere else. Most web hosting is not like that! When you make your site yourself, you can easily upload it to another host when whatever one you're using goes down or makes a policy decision you don't agree with. Squarespace <i>et al.</i> want you to believe that coding your own site is too hard, so you'll keep giving them money. <strong>Stop giving them money!</strong></p>
+				<h4>Enjoy total creative freedom</h4>
+					<p>Your art is unique to you, so why shouldn't your website be? Minimalist, maximalist, retro, modern... When you make it yourself, you get to decide. Every time I've had an idea and wondered "can I make a webpage do this?", I could! It's not always easy, but so much is possible.</p>
+				<h4>Learn something new (and fun?!)</h4>
+					<p>Learning HTML and CSS is a great way to get more comfortable with code. It's not programming, but for a lot of people it's a first step towards <i>learning</i> to program. Even if you have no interest in coding, it's good to learn a new skill. My hope is that this workshop can help people feel more confident on the computer.</p>
+					<p>Also, I think it's fun. :)</p>
+			<h3>What websites inspire you?</h3>
+				<ul>
+					<li>[List to be populated during the workshop]</li>
+				</ul>
 		<h2>Getting started with code</h2>
-			<h3>Tools</h3>
 			<h3>Files and folders</h3>
-		<h2>HTML = <b>h</b>yper<b>t</b>ext <b>m</b>arkup <b>l</b>anguage</h2>
+			<h3>Tools</h3>
+				<p>View source and inspect element</p>
+		<h2>HTML = <u>h</u>yper<u>t</u>ext <u>m</u>arkup <u>l</u>anguage</h2>
 			<h3>Formatting</h3>
-				<textarea style="width: 300px; height:150px;">
+<textarea style="width: 300px; height:150px;">
 <!DOCTYPE html>
 <html>
   <head>
@@ -57,30 +66,37 @@
   </body>
 </html></textarea>
 			<h3>Useful tags</h3>
-		<h2>CSS = <b>c</b>ascading <b>s</b>tyle <b>s</b>heets</h2>
+		<h2>CSS = <u>c</u>ascading <u>s</u>tyle <u>s</u>heets</h2>
 			<h3>Selectors</h3>
 				<p></p>
 			<h3>Properties</h3>
 			<h3>Units</h3>
 		<h2>Images on the web</h2>
 			<h3>Resizing and compression</h3>
-			<p>It's a bad idea to host high-resolution images on your website for two reasons:</p>
-			<ol><li>You will run out of space on free web hosts very quickly.</li><li>Your pages will load very slowly.</li></ol>
+				<p>It's a bad idea to host high-resolution images on your website for two reasons:</p>
+				<ol>
+					<li>You will run out of space on free web hosts very quickly.</li>
+					<li>Your pages will load very slowly.</li>
+				</ol>
 				<ul>
-					<li>Web-based: <a href="https://tinypng.com/">tinyPNG</a></li>
 					<li>Windows: <a href="https://css-ig.net/pinga">pinga</a></li>
 					<li>Mac: <a href="https://imageoptim.com/mac">ImageOptim</a></li>
+					<li>Web-based: <a href="https://tinypng.com/">tinyPNG</a> (free version has a daily limit)</li>
 				</ul>
-			<h3>Robots.txt</h3>
+			<h3>Alt Text</h3>
+				<p>Alternative, or "alt", text is a written description of an image, which is is read aloud by <a href="https://en.wikipedia.org/wiki/Screen_reader">screen readers</a> and displayed on the page if the image cannot load. Alt text is included within the <code>&lt;img&gt;</code> tag, as follows:</p>
+<textarea style="width: 300px; height:50px;">
+<img src="example.png" alt="example alt text"></textarea>
+				<p>For decorative images, alt text should be blank. Not <em>absent</em>; include <code>alt=""</code>.</p>
+				<p>For images that are links, the alt text should descibe the link destination instead of the image itself.</p>
 			<h3>Responsive webpages</h3>
-				<p></p>
-				<textarea style="width: 200px; height:75px;">
+				<p>One of the most common reasons a site will appear "broken" is that images are oveflowing their parent element, or even the screen (especially on phones). Luckily, there's an easy fix:</p>
+<textarea style="width: 200px; height:75px;">
 img { 
   max-width: 100%;
 }</textarea>
 		<h2>Creating gallery layouts</h2>
 			<h3>Sketching rectangles</h3>
-			<h3>Viewing source code</h3>
 			<h3>Flexbox, grid, and columns</h3>
 		<h2>Putting your site online</h2>
 			<h3>Free webhosts</h3>
@@ -88,13 +104,14 @@ img {
 					<p>My homepage is hosted on Neocities!</p>
 				<h4>Github Pages</h4>
 					<p>This site is hosted on Github Pages!</p>
-				<h4>Infinityfree</h4>
 			<h3>(optional) Getting a custom domain</h3>
 				<p>You can get a .com, .net or a .org domain for about $10-$12 per year.</p>
 		<h2>Learning more</h2>
 			<h3>"Homework"</h3>
 				<ul>
 					<li>Add a custom font</li>
+					<li>Robots.txt</li>
+					<li>Give links <code>:hover</code> and <code>:focus</code> styling</li>
 				</ul>
 			<h3>Resources and Communities</h3>
 	</main>
