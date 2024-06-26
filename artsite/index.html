@@ -1,16 +1,46 @@
+<!--  
+
+	   _______________  
+	  |  ___________  |     
+	  | |           | |     ______________
+	  | |   0   0   | |    /              \
+	  | |     -     | |   <    HELLO!!!    |
+	  | |   \___/   | |    \______________/
+	  | |___     ___| |
+	  |_____|\_/|_____|       
+		_|__|/ \|_|_
+	   / ********** \ 
+	 /  ************  \ 
+	--------------------
+
+	Welcome to the source code!
+	Everything between the `<!--` and `-- >` here is a comment;
+	it doesn't get displayed on the final page and is only viewable in the source code.
+
+	You can use comments to write notes for yourself about how bits of code work,
+	remove bits of code you don't want to display now but might want later,
+	or leave hidden messages for those who inspect your source code, like I'm doing here.
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Sharing your art online</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="style.css" rel="stylesheet" type="text/css" media="all">
 </head>
+
 <body>
+
 	<main>
+	
 		<h1>Sharing your art online</h1>
 			<p class="subtitle">How to make a free & handmade portfolio site</p>
-			<p class="date">11AM - 1PM on June 30th at Volume Two</p>
+			<p class="banner">11AM - 1PM on June 30th at Volume Two</p>
+			
 		<h2>What to bring</h2>
 			<ul>
 				<li>A laptop with a text editor</li>
@@ -22,40 +52,67 @@
 						<li>This one's optional; you can work with placeholder images if you don't have the files ready.</li>
 					</ul>
 			</ul>
+			
 		<h2 id="workshop">Workshop agenda (subject to change)</h2>
 			<div class="flex">
 				<ul>
-					<li><b>Intro (me, you, websites)</b> ~ 10 min</li>
-					<li><b>Getting started with code</b> ~ 10 min</li>
-					<li><b>HTML</b> ~ 15 min</li>
-					<li><b>CSS</b> ~ 15 min</li>
-					<li><b>Images</b> ~ 5 min</li>
-					<li><b>Creating gallery layouts</b> ~ 45 min</li>
-					<li><b>Putting your site online</b> ~ 10 min</li>
-					<li><b>Learning more</b> ~ after the workshop</li>
+					<li><b><a href="#intro">Intro (me, you, websites)</a></b> ~ 10 min</li>
+					<li><b><a href="#start">Getting started with code</a></b> ~ 10 min</li>
+					<li><b><a href="#HTML">HTML</a></b> ~ 15 min</li>
+					<li><b><a href="#CSS">CSS</a></b> ~ 15 min</li>
+					<li><b><a href="#images">Images</a></b> ~ 5 min</li>
+					<li><b><a href="#galleries">Creating gallery layouts</a></b> ~ 45 min</li>
+					<li><b><a href="#hosting">Putting your site online</a></b> ~ 10 min</li>
+					<li><b><a href="#more">Learning more</a></b> ~ after the workshop</li>
 				</ul>
-				<img src="../assets/computa.png" alt="drawing of the workshop host at a computer and giving you a thumbs up!">
+				<img src="../assets/computa.png" alt="drawing of the workshop host at a computer, giving you a thumbs up!">
 			</div>
-		<p class="date">Everything below this is a work in progress!</p>
-		<h2>Introduction</h2>
-			<p>Hi. I have no qualifications, but I do have a <a href="https://ribo.zone">homepage</a> (where I sometimes share my art) and a lot of enthusiasm for website-making. Maybe you're attending this workshop offline and I'm speaking directly to you, or maybe you're reading this on your own. Either way, what I'm here to tell you is that you can make your own website without paying Squarespace $20/month.</p>
+			
+		<p class="banner">Everything below this is a work in progress!</p>
+		
+		<h2 id="intro">Introduction</h2>
+			<p>Hi. I have no qualifications, but I do have a <a href="https://ribo.zone">homepage</a> (where I sometimes share my art) and a lot of enthusiasm for website-making. Maybe you're attending this workshop offline and I'm speaking directly to you, or maybe you're reading this on your own. Either way, what I'm here to tell you is that you can make your own portfolio site without paying Squarespace $20/month.</p>
+			
 			<h3>Why make a website by hand?</h3>
 				<h4>Save money by not paying for stuff you don't own</h4>
 					<p>Squarespace, Wix, Cargo, etc are all <strong style="text-transform:uppercase;">too expensive</strong> and you don't even own your site! They "own" their templates, so they prevent you from exporting your site and taking the files somewhere else. Most web hosting is not like that! When you make your site yourself, you can easily upload it to another host when whatever one you're using goes down or makes a policy decision you don't agree with. Squarespace <i>et al.</i> want you to believe that coding your own site is too hard, so you'll keep giving them money. <strong>Stop giving them money!</strong></p>
 				<h4>Enjoy total creative freedom</h4>
-					<p>Your art is unique to you, so why shouldn't your website be? Minimalist, maximalist, retro, modern... When you make it yourself, you get to decide. Every time I've had an idea and wondered "can I make a webpage do this?", I could! It's not always easy, but so much is possible.</p>
+					<p>Your art is unique to you, so why shouldn't your website be? When you build it from scratch, you can make your site have any layout and any style you can dream of. Every time I've had an idea and wondered "can I make a webpage do this?", I could! It's not always easy, but so much is possible.</p>
 				<h4>Learn something new (and fun?!)</h4>
-					<p>Learning HTML and CSS is a great way to get more comfortable with code. It's not programming, but for a lot of people it's a first step towards <i>learning</i> to program. Even if you have no interest in coding, it's good to learn a new skill. My hope is that this workshop can help people feel more confident on the computer.</p>
+					<p>Learning HTML and CSS is a great way to get more comfortable with code. It's not programming, but for a lot of people it's a first step towards learning to program. Even if you have no interest in coding, it's good to learn a new skill. My hope is that this workshop can help people feel more confident on the computer.</p>
 					<p>Also, I think it's fun. :)</p>
+					
 			<h3>What websites inspire you?</h3>
 				<ul>
 					<li>[List to be populated during the workshop]</li>
 				</ul>
-		<h2>Getting started with code</h2>
+				
+		<h2 id="start">Getting started with code</h2>
+			<p>Your website is going to start as files on your computer, then you'll put them online at the end of the workshop. Let's make some files!</p>
+			
 			<h3>Files and folders</h3>
+				<p><input type="checkbox"> <strong>Make a new folder on your computer where you can easily find it.</strong> This will become your website! You can name it whatever you want.</p>
+				<p><input type="checkbox"> <strong>Open your text editor, create a new document, and save it as <code>index.html</code>.</strong> This will become the first page people see when they visit your website.</p>
+				<p><input type="checkbox"> <strong>Create another new document, and save it as <code>style.css</code>.</strong> This is where you'll change how <code>index.html</code> (and any other page you make) will look.</p>
+				<p><input type="checkbox"> <strong>Create a new folder within the first one. Put the images you want to share on your site in this folder.</strong> This is optional, but it keeps things organized. The folder can have any name; some popular choices are "img", "assets", etc.</p>
+				<p><small><strong>Note:</strong> <em>Ideally, folder and file names should never include spaces. They get rendered as <code>%20</code> in the address bar and I think it looks bad.</small></em></p>
+				
 			<h3>Tools</h3>
-				<p>View source and inspect element</p>
-		<h2>HTML = <u>h</u>yper<u>t</u>ext <u>m</u>arkup <u>l</u>anguage</h2>
+				<p>Before we start <em>writing</em> code, let's <em>read</em> some. Your web browser has tools to view the source code of any web page you visit. When you're on a site that's doing something you like and you're wondering how they did it, check out the code!</p>
+				<h4>View source: Ctrl+U (Windows) or ⌘+U (Mac)</h4>
+					<p>Like the name suggests, this will take you straight to the code of the HTML document you're currently viewing, as it was written. It can more or less useful depending on the site you're on. Pages written by hand are typically legible to other human beings, while code generated by a program can be pretty obscure.</p>
+					<p><input type="checkbox"> <strong>View the source of this page.</strong> I tried to keep it nice and organized.</p>
+					<p><input type="checkbox"> <strong>View the source of the Google Doodle page.</strong></p>
+				<h4>Inspect element: Ctrl+Shift+C (Windows) or  ⌘+Option+I (Mac)</h4>
+					<p>Even when the source code appears to be nonsense, the inspect tool can clear things up by displaying the page and the code side by side. Hovering over a piece of code (an HTML "element") will highlight the corresponding element on the page, and clicking on an element will show the CSS styling that's being added to it.</p>
+					<p><input type="checkbox"> <strong>Inspect an element on this page.</strong></p>
+					<p><input type="checkbox"> <strong>Inspect an element on the Google Doodle page.</strong></p>
+					<p>What you see here may not make sense to you now, but hopefully will become more clear after the following sections on HTML and CSS. Also, the inspector interface looks different across browsers, so you may need to look up a guide for your specific browser if you're getting lost.</p>
+				<p><small><strong>Note:</strong> <em>You can also access view source and inspect element by right clicking (Windows) or control clicking (Mac). Another way to access the source code is by typing "<code>view-source:</code>" into the address bar before the "<code>https://</code>" (I've even done this on my phone, when I <b>really</b> wanted to see).</small></em></p>				
+				
+		<h2 id="HTML">HTML = <u>h</u>yper<u>t</u>ext <u>m</u>arkup <u>l</u>anguage</h2>
+			<p>HTML is the structure and content of a page.</p>
+			
 			<h3>Formatting</h3>
 <textarea style="width: 300px; height:150px;">
 <!DOCTYPE html>
@@ -65,55 +122,85 @@
   <body>
   </body>
 </html></textarea>
+
 			<h3>Useful tags</h3>
-		<h2>CSS = <u>c</u>ascading <u>s</u>tyle <u>s</u>heets</h2>
+			
+		<h2 id="CSS">CSS = <u>c</u>ascading <u>s</u>tyle <u>s</u>heets</h2>
+			<p>CSS changes the appearance of the page.</p>
+			
 			<h3>Selectors</h3>
 				<p></p>
 			<h3>Properties</h3>
+				<p></p>
 			<h3>Units</h3>
-		<h2>Images on the web</h2>
+				<p></p>
+			
+		<h2 id="images">Images on the web</h2>
+			<p></p>
+			
 			<h3>Resizing and compression</h3>
-				<p>It's a bad idea to host high-resolution images on your website for two reasons:</p>
+				<p>It's a bad idea to put high-resolution images on your website for two reasons:</p>
 				<ol>
 					<li>You will run out of space on free web hosts very quickly.</li>
 					<li>Your pages will load very slowly.</li>
 				</ol>
+				<p>Even after resizing your images, more can be done to reduce the file size. </p>
 				<ul>
 					<li>Windows: <a href="https://css-ig.net/pinga">pinga</a></li>
 					<li>Mac: <a href="https://imageoptim.com/mac">ImageOptim</a></li>
 					<li>Web-based: <a href="https://tinypng.com/">tinyPNG</a> (free version has a daily limit)</li>
 				</ul>
+				
 			<h3>Alt Text</h3>
-				<p>Alternative, or "alt", text is a written description of an image, which is is read aloud by <a href="https://en.wikipedia.org/wiki/Screen_reader">screen readers</a> and displayed on the page if the image cannot load. Alt text is included within the <code>&lt;img&gt;</code> tag, as follows:</p>
-<textarea style="width: 300px; height:50px;">
-<img src="example.png" alt="example alt text"></textarea>
+				<p>Alternative, or "alt", text is a written description of an image, which is read aloud by <a href="https://en.wikipedia.org/wiki/Screen_reader">screen readers</a> and displayed on the page if the image cannot load. Alt text is included within the <code>&lt;img&gt;</code> tag, as follows:</p>
+				<textarea style="width: 300px; height:50px;"><img src="example.png" alt="example alt text"></textarea>
 				<p>For decorative images, alt text should be blank. Not <em>absent</em>; include <code>alt=""</code>.</p>
-				<p>For images that are links, the alt text should descibe the link destination instead of the image itself.</p>
+				<p>For images that used for navigation, the alt text should descibe the link destination instead of what the image looks like.</p>
+				
 			<h3>Responsive webpages</h3>
-				<p>One of the most common reasons a site will appear "broken" is that images are oveflowing their parent element, or even the screen (especially on phones). Luckily, there's an easy fix:</p>
+				<p>One of the most common reasons a site will appear "broken" is that images are oveflowing their parent element, or even the entire screen (especially on phones). Luckily, there's an easy fix:</p>
 <textarea style="width: 200px; height:75px;">
 img { 
   max-width: 100%;
 }</textarea>
-		<h2>Creating gallery layouts</h2>
+
+		<h2 id="galleries">Creating gallery layouts</h2>
+		
 			<h3>Sketching rectangles</h3>
+				<p><input type="checkbox"> <strong>With a pen and paper, sketch out a layout for your site.</strong></p>
+				<p></p>
+				
 			<h3>Flexbox, grid, and columns</h3>
-		<h2>Putting your site online</h2>
+			
+		<h2 id="hosting">Putting your site online</h2>
+		
 			<h3>Free webhosts</h3>
 				<h4>Neocities</h4>
 					<p>My homepage is hosted on Neocities!</p>
 				<h4>Github Pages</h4>
 					<p>This site is hosted on Github Pages!</p>
+					
 			<h3>(optional) Getting a custom domain</h3>
-				<p>You can get a .com, .net or a .org domain for about $10-$12 per year.</p>
-		<h2>Learning more</h2>
+				<p>This part isn't free, unfortunately, but it's less expensive than you might have realized. You can get a .com, .net or a .org domain for about $10-$12 per <strong>year</strong>, less than a single <strong>month</strong> of Squarespace's least expensive plan. (When they offer you one year of free domain registration like it's a great deal, they're ripping you off!)</p>
+				<p>I buy my domains from <a href="https://porkbun.com/">Porkbun</a>, and I have no complaints. I also hear good things about <a href="https://www.namecheap.com/">Namecheap</a>, but I've never used their service.</p>
+				
+		<h2 id="more">Learning more</h2>
+			<p></p>
+		
 			<h3>"Homework"</h3>
 				<ul>
 					<li>Add a custom font</li>
 					<li>Robots.txt</li>
 					<li>Give links <code>:hover</code> and <code>:focus</code> styling</li>
 				</ul>
+				
 			<h3>Resources and Communities</h3>
+				<ul>
+					<li>You can always ask me for help! I love doing this stuff.</li>
+				</ul>
+
 	</main>
+	
 </body>
+
 </html>
