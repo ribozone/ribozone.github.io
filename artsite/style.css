@@ -16,8 +16,7 @@
 
 body { 
 	font-family: monospace;
-	background-color: lavender;
-	background: linear-gradient(140deg,white,lavender);
+	background: linear-gradient(140deg,white,lavender), lavender;
 	background-attachment: fixed;
 	color: #0E3B43;
 	padding: 4rem 0;
@@ -55,6 +54,7 @@ ul { margin: 0.5rem 1.5rem 0.5rem 4rem; }
 ul ul  { margin: 0.5rem 1.5rem 1.5rem 2rem; }
 ol  { margin: 0.5rem 1.5rem 0.5rem 4.75rem; }
 pre { background-color: white; margin: 1rem auto; width: fit-content; max-width: 100%; }
+code { max-width: 100%; }
 
 img { max-width: 100%; margin: 1rem; }
 
