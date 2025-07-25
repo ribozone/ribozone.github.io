@@ -54,7 +54,7 @@ p, li { line-height: 1.6; }
 ul { margin: 0.5rem 1.5rem 0.5rem 4rem; }
 ul ul  { margin: 0.5rem 1.5rem 1.5rem 2rem; }
 ol  { margin: 0.5rem 1.5rem 0.5rem 4.75rem; }
-pre { background-color: white; margin: 1rem auto; width: fit-content; }
+pre { background-color: white; margin: 1rem auto; width: fit-content; max-width: 100%; }
 
 img { max-width: 100%; margin: 1rem; }
 
